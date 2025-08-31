@@ -60,23 +60,27 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      <div className="flex-center-center mt-20 flex-col">
-        <h3 className={`${styles.sectionHeadText} marker`}>Skills</h3>
-        <div className="mt-2 flex flex-wrap  justify-center gap-10 ">
-          {technologies.map((item, i) => (
-            <div key={i} className="flex-around-center w-[80px] flex-col">
-              <img src={item.icon} width="100%" alt={item.name} />
-              <p className="text-center">{item.name}</p>
-            </div>
-          ))}
-        </div>
+    <div className="flex-center-center mt-20 flex-col">
+  <h3 className={`${styles.sectionHeadText} marker`}>Skills</h3>
+  <div className="mt-2 flex flex-wrap justify-center gap-10">
+    {technologies.map((item, i) => (
+      <div key={i} className="flex-around-center w-[80px] flex-col">
+        <img 
+          src={`/tech/${item.icon}`} 
+          width="100%" 
+          alt={item.name} 
+        />
+        <p className="text-center">{item.name}</p>
       </div>
+    ))}
+  </div>
+</div>
       <div className="flex-center-center mt-20 flex-col">
         <h3 className={styles.sectionSubText}>Tools and Software</h3>
         <div className="mt-2 flex flex-wrap  justify-center gap-10 ">
           {tools.map((item, i) => (
             <div key={i} className="flex-around-center w-[80px] flex-col">
-              <img src={item.icon} width="100%" alt={item.name} />
+              <img src={`/tools/${item.icon}`} width="100%" alt={item.name} />
               <p className="text-center">{item.name}</p>
             </div>
           ))}

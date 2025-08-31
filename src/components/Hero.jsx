@@ -24,10 +24,10 @@ const Hero = () => {
           </div>
           <motion.div variants={textVariant()}>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className="text-[#915EFF]">Rajesh</span>
+              Hi, I'm <span className="text-[#915EFF]">Kapil Yadav</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop Full Stack Wep Applications, using{" "}
+              I develop Full Stack Wep Applications using 
               <br className="hidden sm:block" />
               <span className="gradient-text"> MERN Stack</span>
             </p>
@@ -40,11 +40,11 @@ const Hero = () => {
         >
           <Avatar
             alt="my image"
-            src="./myImage1.png"
+            src="./Kapilimage.jpg"
             sx={
               !isSmallScreen
-                ? { width: 200, height: 400 }
-                : { width: 100, height: 200 }
+                ? { width: 500, height: 500 }
+                : { width: 100, height: 300 }
             }
           />
         </motion.div>
